@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "HN Highlight",
+  "version": "0.1",
+  "icons": {
+    "256": "hn_icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://news.ycombinator.com/*"],
+      "js": ["hn_highlight.js"]
+    }
+  ]
+}
